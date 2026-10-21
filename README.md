@@ -1,6 +1,6 @@
 # homebrew-tap
 
-[shooting-star](https://github.com/AndersonJo/Shooting-Star-) 를 위한 Homebrew tap.
+[shooting-star](https://github.com/AndersonJo/Shooting-Star) 를 위한 Homebrew tap.
 
 ```bash
 brew install --cask AndersonJo/tap/shooting-star   # 설치

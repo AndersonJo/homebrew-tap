@@ -2,10 +2,10 @@ cask "shooting-star" do
   version "0.2.1"
   sha256 "24ea16b6c5ce639495325fb4256f12af86a7971e9bc3370b6c45ba4fe0a6be7d"
 
-  url "https://github.com/AndersonJo/Shooting-Star-/releases/download/v#{version}/shooting-star-#{version}-macos.zip"
+  url "https://github.com/AndersonJo/Shooting-Star/releases/download/v#{version}/shooting-star-#{version}-macos.zip"
   name "shooting-star"
   desc "Lightweight local document manager for markdown, yaml, csv and json"
-  homepage "https://github.com/AndersonJo/Shooting-Star-"
+  homepage "https://github.com/AndersonJo/Shooting-Star"
 
   livecheck do
     url :url
