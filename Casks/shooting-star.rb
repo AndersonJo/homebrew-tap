@@ -13,16 +13,16 @@ cask "shooting-star" do
   end
 
   depends_on formula: "node"
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "shooting-star.app"
   binary "#{appdir}/shooting-star.app/Contents/Resources/ss"
 
   # 개발자 ID 로 서명/공증되지 않은 앱이라 Gatekeeper 경고가 뜨지 않도록 격리 속성을 제거한다.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/shooting-star.app"],
-                   must_succeed: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-dr", "com.apple.quarantine", "{{appdir}}/shooting-star.app"],
+        must_succeed: false
   end
 
   # 메모(~/.shooting-star)는 사용자 데이터라 삭제 대상에 넣지 않는다.
