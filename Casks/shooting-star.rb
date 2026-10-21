@@ -1,6 +1,6 @@
 cask "shooting-star" do
-  version "0.2.0"
-  sha256 "c9784adc9739cf0ca2d9f9cbfd9f064a406375e6488f26076ee3b1be5236bc10"
+  version "0.2.1"
+  sha256 "24ea16b6c5ce639495325fb4256f12af86a7971e9bc3370b6c45ba4fe0a6be7d"
 
   url "https://github.com/AndersonJo/Shooting-Star-/releases/download/v#{version}/shooting-star-#{version}-macos.zip"
   name "shooting-star"
